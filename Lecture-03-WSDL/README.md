@@ -56,3 +56,7 @@ You can also open http://localhost:8000/?wsdl in a browser to see the raw WSDL X
 ## Previous
 
 [Lecture 2 – SOAP](../Lecture-02-SOAP-Protocol/)
+
+## Next
+
+[Lecture 4 – NBP Exchange Rates](../Lecture-04-NBP-Exchange-Rates/)
