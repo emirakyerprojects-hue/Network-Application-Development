@@ -79,3 +79,7 @@ python examples/exchange_office_client.py    # terminal 2
 ## Previous
 
 [Lecture 5 – Project Architecture](../Lecture-05-Project-Architecture/)
+
+## Next
+
+[Lecture 7 – NBP API Integration](../Lecture-07-NBP-Integration/)

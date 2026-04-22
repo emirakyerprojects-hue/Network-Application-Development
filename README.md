@@ -2,6 +2,12 @@
 
 Course project for Network Application Development. This repo has lecture notes and working Python examples covering Web Services, SOAP, WSDL, and a currency exchange office system.
 
+## Course Information
+
+- **Course name:** Network Application Development
+- **Project title:** Currency Exchange Office System
+- **Description:** A network-based system simulating the functionality of an online currency exchange office, built progressively through laboratory meetings.
+
 ## What's inside
 
 - **Lecture 1** – Intro to Web Services, what SOA is, why interoperability matters
@@ -10,6 +16,7 @@ Course project for Network Application Development. This repo has lecture notes 
 - **Lecture 4** – NBP API, building a currency exchange rate service
 - **Lecture 5** – Project architecture for the exchange office system
 - **Lecture 6** – Currency exchange logic (buy/sell with spread)
+- **Lecture 7** – Full NBP API integration (caching, retries, historical rates, statistics)
 
 Each lecture folder has a README with notes and an `examples/` folder with runnable code.
 
@@ -23,20 +30,21 @@ pip install -r requirements.txt
 
 ## How to run
 
-Most Lecture 1 scripts just run on their own. For Lectures 2–6 you typically need to start the server first:
+Most Lecture 1 scripts just run on their own. For Lectures 2–7 you typically need to start the server first:
 
 ```bash
 # terminal 1 — start the server
-python Lecture-06-Exchange-Logic/examples/exchange_office_server.py
+python Lecture-07-NBP-Integration/examples/exchange_office_server.py
 
 # terminal 2 — run the client
-python Lecture-06-Exchange-Logic/examples/exchange_office_client.py
+python Lecture-07-NBP-Integration/examples/exchange_office_client.py
 ```
 
 Some scripts work standalone (no server needed):
 ```bash
 python Lecture-04-NBP-Exchange-Rates/examples/nbp_api_demo.py
 python Lecture-06-Exchange-Logic/examples/exchange_logic_demo.py
+python Lecture-07-NBP-Integration/examples/nbp_integration_demo.py
 ```
 
 Check the README in each lecture folder for more details.
@@ -81,6 +89,13 @@ Network-Application-Development/
 │   ├── README.md
 │   └── examples/
 │       ├── exchange_logic_demo.py
+│       ├── exchange_office_server.py
+│       └── exchange_office_client.py
+├── Lecture-07-NBP-Integration/
+│   ├── README.md
+│   └── examples/
+│       ├── nbp_client.py
+│       ├── nbp_integration_demo.py
 │       ├── exchange_office_server.py
 │       └── exchange_office_client.py
 ├── README.md
