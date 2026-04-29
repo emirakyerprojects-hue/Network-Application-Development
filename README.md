@@ -17,6 +17,7 @@ Course project for Network Application Development. This repo has lecture notes 
 - **Lecture 5** – Project architecture for the exchange office system
 - **Lecture 6** – Currency exchange logic (buy/sell with spread)
 - **Lecture 7** – Full NBP API integration (caching, retries, historical rates, statistics)
+- **Lecture 8** – GUI client application (tkinter): login, live rates, buy/sell, portfolio, history
 
 Each lecture folder has a README with notes and an `examples/` folder with runnable code.
 
@@ -36,7 +37,10 @@ Most Lecture 1 scripts just run on their own. For Lectures 2–7 you typically n
 # terminal 1 — start the server
 python Lecture-07-NBP-Integration/examples/exchange_office_server.py
 
-# terminal 2 — run the client
+# terminal 2 — run the GUI client (Lab 8)
+python Lecture-08-WPF-Client/examples/gui_client.py
+
+# or run the script client (Lab 7)
 python Lecture-07-NBP-Integration/examples/exchange_office_client.py
 ```
 
@@ -98,6 +102,10 @@ Network-Application-Development/
 │       ├── nbp_integration_demo.py
 │       ├── exchange_office_server.py
 │       └── exchange_office_client.py
+├── Lecture-08-WPF-Client/
+│   ├── README.md
+│   └── examples/
+│       └── gui_client.py
 ├── README.md
 └── requirements.txt
 ```
